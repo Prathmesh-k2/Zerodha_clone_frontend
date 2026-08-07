@@ -26,10 +26,10 @@ function Hero() {
                     In addition, we run a number of popular open online educational and community initiatives to empower retail traders and investors.
                 </p>
                 <p>
-                    <a href="" style={{textDecoration:"none"}}>Rainmatter </a>, our fintech fund and incubator, has invested in several fintech startups with the goal of growing the Indian capital markets.
+                    <span style={{textDecoration:"none", color:"#387ed1", cursor:"pointer"}}>Rainmatter </span>, our fintech fund and incubator, has invested in several fintech startups with the goal of growing the Indian capital markets.
                 </p>
                 <p>
-                    And yet, we are always up to something new every day. Catch up on the latest updates on our  <a href=""  style={{textDecoration:"none"}}>blog </a>or see what the media is saying about us or learn more about our business and product philosophies.
+                    And yet, we are always up to something new every day. Catch up on the latest updates on our  <span style={{textDecoration:"none", color:"#387ed1", cursor:"pointer"}}>blog </span>or see what the media is saying about us or learn more about our business and product philosophies.
                 </p>
                 
             </div>

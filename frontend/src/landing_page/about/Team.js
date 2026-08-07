@@ -12,6 +12,7 @@ function Team() {
         style={{lineHeight:"1.7",fontSize:"1.1em"}}>
             <div className="col-6 p-5 text-center">
          <img src="\Media\Images\nithinKamath.jpg"
+         alt="Nitin Kamath"
          style={{borderRadius:"100%" ,width:"50%"}} />
          <h4 className="mt-5">
             Nitin Kamath
@@ -30,7 +31,7 @@ function Team() {
                 </p>
                 <p>
                    Playing basketball is his zen.</p>
-                  <p> Connect on <a href=""  style={{textDecoration:"none"}}>Homepage </a>/ <a href=""  style={{textDecoration:"none"}}> TradingQnA </a> <a href=""  style={{textDecoration:"none"}}>Twitter </a>/ 
+                  <p>Connect on <span style={{textDecoration:"none", color:"#387ed1", cursor:"pointer"}}>Homepage </span>/ <span style={{textDecoration:"none", color:"#387ed1", cursor:"pointer"}}> TradingQnA </span> <span style={{textDecoration:"none", color:"#387ed1", cursor:"pointer"}}>Twitter </span>/
                 </p>
                 
             </div>
