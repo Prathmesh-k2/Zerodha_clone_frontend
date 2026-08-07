@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.nav-link{
+  margin-left: 40px;
+}
+
+#supportHero{
+  background-color: rgb(56, 126, 209);
+  color: white;
+}
+
+#supportHero a{
+  color: white;
+}
+
+#supportWrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 150px;
+}
+
+#supportHero input{
+  padding: 20px 50px;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* ─── Auth Page (Signup / Login) ─────────────────────────────── */
+.zd-auth-page {
+  min-height: calc(100vh - 140px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f0f4ff 0%, #e8f0fe 100%);
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.zd-auth-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 40px rgba(33, 82, 206, 0.12), 0 1px 4px rgba(0,0,0,0.06);
+  padding: 40px 44px 36px;
+  width: 100%;
+  max-width: 460px;
+  box-sizing: border-box;
+  animation: zdFadeUp 0.38s ease;
+}
+
+@keyframes zdFadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.zd-auth-logo {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.zd-auth-logo-img {
+  height: 36px;
+  object-fit: contain;
+}
+
+/* Tabs */
+.zd-auth-tabs {
+  display: flex;
+  border-bottom: 2px solid #e8edf5;
+  margin-bottom: 28px;
+}
+
+.zd-auth-tab {
+  flex: 1;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #8a9ab5;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+  font-family: inherit;
+}
+
+.zd-auth-tab.active {
+  color: #387ed1;
+  border-bottom-color: #387ed1;
+}
+
+.zd-auth-tab:hover:not(.active) {
+  color: #4d7ab8;
+}
+
+.zd-auth-subtitle {
+  font-size: 0.88rem;
+  color: #7a8fa8;
+  margin: 0 0 22px 0;
+  text-align: center;
+}
+
+.zd-auth-error {
+  background: #fff2f0;
+  border: 1px solid #ffc6bb;
+  color: #c0392b;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.85rem;
+  margin-bottom: 18px;
+  animation: zdShake 0.3s ease;
+}
+
+@keyframes zdShake {
+  0%,100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+.zd-auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.zd-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.zd-field label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #3a4a5c;
+  letter-spacing: 0.2px;
+}
+
+.zd-field input {
+  padding: 10px 13px;
+  border: 1.5px solid #d8e2f0;
+  border-radius: 7px;
+  font-size: 0.92rem;
+  color: #1a2a3a;
+  background: #f8fafd;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+}
+
+.zd-field input:focus {
+  border-color: #387ed1;
+  box-shadow: 0 0 0 3px rgba(56, 126, 209, 0.14);
+  background: #fff;
+}
+
+.zd-field input::placeholder {
+  color: #b0bdd0;
+}
+
+.zd-auth-btn {
+  margin-top: 6px;
+  padding: 12px;
+  background: #387ed1;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: inherit;
+}
+
+.zd-auth-btn:hover:not(:disabled) {
+  background: #2d6ab8;
+  box-shadow: 0 4px 14px rgba(56, 126, 209, 0.35);
+  transform: translateY(-1px);
+}
+
+.zd-auth-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.zd-spinner {
+  width: 17px;
+  height: 17px;
+  border: 2px solid rgba(255,255,255,0.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: zdSpin 0.7s linear infinite;
+  display: inline-block;
+}
+
+@keyframes zdSpin {
+  to { transform: rotate(360deg); }
+}
+
+.zd-auth-switch {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.87rem;
+  color: #7a8fa8;
+}
+
+.zd-tab-switch-btn {
+  background: none;
+  border: none;
+  color: #387ed1;
+  font-weight: 600;
+  font-size: 0.87rem;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+  text-decoration: underline;
+}
+
+.zd-tab-switch-btn:hover {
+  color: #2d6ab8;
+}
