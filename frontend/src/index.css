@@ -11,26 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.nav-link{
+
+.nav-link {
   margin-left: 40px;
 }
 
-#supportHero{
+#supportHero {
   background-color: rgb(56, 126, 209);
   color: white;
 }
 
-#supportHero a{
+#supportHero a {
   color: white;
 }
 
-#supportWrapper{
+#supportWrapper {
   display: flex;
   justify-content: space-between;
   margin: 0 150px;
 }
 
-#supportHero input{
+#supportHero input {
   padding: 20px 50px;
   width: 100%;
   font-size: 20px;
@@ -52,7 +53,7 @@ code {
 .zd-auth-card {
   background: #fff;
   border-radius: 16px;
-  box-shadow: 0 4px 40px rgba(33, 82, 206, 0.12), 0 1px 4px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 40px rgba(33, 82, 206, 0.12), 0 1px 4px rgba(0, 0, 0, 0.06);
   padding: 40px 44px 36px;
   width: 100%;
   max-width: 460px;
@@ -61,8 +62,15 @@ code {
 }
 
 @keyframes zdFadeUp {
-  from { opacity: 0; transform: translateY(18px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .zd-auth-logo {
@@ -125,9 +133,19 @@ code {
 }
 
 @keyframes zdShake {
-  0%,100% { transform: translateX(0); }
-  25% { transform: translateX(-5px); }
-  75% { transform: translateX(5px); }
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  75% {
+    transform: translateX(5px);
+  }
 }
 
 .zd-auth-form {
@@ -203,7 +221,7 @@ code {
 .zd-spinner {
   width: 17px;
   height: 17px;
-  border: 2px solid rgba(255,255,255,0.4);
+  border: 2px solid rgba(255, 255, 255, 0.4);
   border-top-color: #fff;
   border-radius: 50%;
   animation: zdSpin 0.7s linear infinite;
@@ -211,7 +229,9 @@ code {
 }
 
 @keyframes zdSpin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .zd-auth-switch {
@@ -235,4 +255,27 @@ code {
 
 .zd-tab-switch-btn:hover {
   color: #2d6ab8;
+}
+
+.support-link-btn {
+  background-color: #387ed1;
+  color: #fff;
+  border: 1px solid #387ed1;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin: 6px 8px 6px 0;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.support-link-btn:hover {
+  background-color: #2f6fc0;
+  border-color: #2f6fc0;
+}
+
+.support-link-btn:active {
+  transform: scale(0.98);
 }
