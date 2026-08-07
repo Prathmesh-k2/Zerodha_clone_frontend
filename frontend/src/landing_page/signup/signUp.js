@@ -1,12 +1,10 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
 
 // Dashboard URL — set REACT_APP_DASHBOARD_URL in Vercel env vars
 const DASHBOARD_URL = process.env.REACT_APP_DASHBOARD_URL || "https://zerodha-clone-dashboard-373f8piay-prathmeshs-projects-e9602d09.vercel.app/";
 const API_URL = process.env.REACT_APP_API_URL || "https://zerodha-clone-backend-uc3s.onrender.com";
 
 function SignUp() {
-    const navigate = useNavigate();
     const [tab, setTab] = useState("signup"); // "signup" | "login"
 
     /* ── Signup state ── */
