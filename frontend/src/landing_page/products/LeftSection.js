@@ -33,22 +33,22 @@ function LeftSection({
           <div className="mt-3">
             {googlePlay ? (
               <a href={googlePlay}>
-                <img src="media/images/googlePlayBadge.svg" alt="Get it on Google Play" />
+                <img src="/media/images/googlePlayBadge.svg" alt="Get it on Google Play" />
               </a>
             ) : (
-              <img src="media/images/googlePlayBadge.svg" alt="Get it on Google Play" />
+              <img src="/media/images/googlePlayBadge.svg" alt="Get it on Google Play" />
             )}
             {appStore ? (
               <a href={appStore}>
                 <img
-                  src="media/images/appstoreBadge.svg"
+                  src="/media/images/appstoreBadge.svg"
                   alt="Download on the App Store"
                   style={{ marginLeft: "50px" }}
                 />
               </a>
             ) : (
               <img
-                src="media/images/appstoreBadge.svg"
+                src="/media/images/appstoreBadge.svg"
                 alt="Download on the App Store"
                 style={{ marginLeft: "50px" }}
               />

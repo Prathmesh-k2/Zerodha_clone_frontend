@@ -11,7 +11,7 @@ function Footer() {
           {/* Logo Section */}
           <div className="col-lg-3 col-md-6 mb-4">
             <img
-              src="/Media/Images/logo.svg"
+              src="/media/images/logo.svg"
               alt="Zerodha"
               className="footer-logo"
             />
@@ -39,12 +39,12 @@ function Footer() {
 
             <div className="store-buttons mt-4">
               <img
-                src="/Media/Images/googlePlayBadge.svg"
+                src="/media/images/googlePlayBadge.svg"
                 alt="Google Play"
               />
 
               <img
-                src="/Media/Images/appstoreBadge.svg"
+                src="/media/images/appstoreBadge.svg"
                 alt="App Store"
               />
             </div>

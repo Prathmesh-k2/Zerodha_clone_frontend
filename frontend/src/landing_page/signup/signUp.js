@@ -90,7 +90,7 @@ function SignUp() {
             <div className="zd-auth-card">
                 {/* Logo */}
                 <div className="zd-auth-logo">
-                    <img src="media/images/logo.svg" alt="Zerodha" className="zd-auth-logo-img" />
+                    <img src="/media/images/logo.svg" alt="Zerodha" className="zd-auth-logo-img" />
                 </div>
 
                 {/* Tabs */}

@@ -11,7 +11,7 @@ function Team() {
         <div className="row p-3  text-muted "
         style={{lineHeight:"1.7",fontSize:"1.1em"}}>
             <div className="col-6 p-5 text-center">
-         <img src="\Media\Images\nithinKamath.jpg"
+         <img src="/media/images/nithinKamath.jpg"
          alt="Nitin Kamath"
          style={{borderRadius:"100%" ,width:"50%"}} />
          <h4 className="mt-5">

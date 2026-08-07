@@ -29,7 +29,7 @@ function Stats() {
           </p>
         </div>
         <div className="col-6 p-5">
-          <img src="media/images/ecosystem.png" alt="Zerodha ecosystem" style={{ width: "90%" }} />
+          <img src="/media/images/ecosystem.png" alt="Zerodha ecosystem" style={{ width: "90%" }} />
           <div className="text-center">
             <button className="support-link-btn" style={{ background: "none", border: "none", cursor: "pointer", color: "#387ed1" }}>
               Explore our products{" "}
