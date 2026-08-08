@@ -11,7 +11,7 @@ function Footer() {
           {/* Logo Section */}
           <div className="col-lg-3 col-md-6 mb-4">
             <img
-              src="/media/images/logo.svg"
+              src="/media/images/logo.svg?v=2"
               alt="Zerodha"
               className="footer-logo"
             />
