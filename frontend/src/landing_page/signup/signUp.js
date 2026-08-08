@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-// Dashboard & API URLs — strictly falls back to production dashboard if env is invalid or placeholder
+// Dashboard & API URLs — strictly falls back to public production dashboard
 const getDashboardUrl = () => {
     const envUrl = process.env.REACT_APP_DASHBOARD_URL;
-    if (envUrl && typeof envUrl === "string" && !envUrl.includes("your-dashboard") && envUrl.startsWith("http")) {
+    if (envUrl && typeof envUrl === "string" && !envUrl.includes("your-dashboard") && !envUrl.includes("373f8piay") && envUrl.startsWith("http")) {
         return envUrl;
     }
     return "https://zerodha-clone-dashboard-sigma.vercel.app/";
