@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 
-// Dashboard & API URLs — uses Vercel env vars or falls back to production endpoints
-const rawDashboardUrl = process.env.REACT_APP_DASHBOARD_URL;
-const DASHBOARD_URL = (rawDashboardUrl && !rawDashboardUrl.includes("your-dashboard"))
-    ? rawDashboardUrl
-    : "https://zerodha-clone-dashboard-373f8piay-prathmeshs-projects-e9602d09.vercel.app/";
+// Dashboard & API URLs — strictly falls back to production dashboard if env is invalid or placeholder
+const getDashboardUrl = () => {
+    const envUrl = process.env.REACT_APP_DASHBOARD_URL;
+    if (envUrl && typeof envUrl === "string" && !envUrl.includes("your-dashboard") && envUrl.startsWith("http")) {
+        return envUrl;
+    }
+    return "https://zerodha-clone-dashboard-373f8piay-prathmeshs-projects-e9602d09.vercel.app/";
+};
+const DASHBOARD_URL = getDashboardUrl();
 
 const rawApiUrl = process.env.REACT_APP_API_URL;
-const API_URL = (rawApiUrl && !rawApiUrl.includes("your-backend"))
+const API_URL = (rawApiUrl && typeof rawApiUrl === "string" && !rawApiUrl.includes("your-backend") && rawApiUrl.startsWith("http"))
     ? rawApiUrl
     : "https://zerodha-clone-backend-uc3s.onrender.com";
 
