@@ -6,7 +6,7 @@ const getDashboardUrl = () => {
     if (envUrl && typeof envUrl === "string" && !envUrl.includes("your-dashboard") && envUrl.startsWith("http")) {
         return envUrl;
     }
-    return "https://zerodha-clone-dashboard-373f8piay-prathmeshs-projects-e9602d09.vercel.app/";
+    return "https://zerodha-clone-dashboard-sigma.vercel.app/";
 };
 const DASHBOARD_URL = getDashboardUrl();
 
