@@ -11,26 +11,26 @@ function LeftSection({
 }) {
   return (
     <div className="container mt-5">
-      <div className="row">
-        <div className="col-6">
-          <img src={imageURL} alt={productName} />
+      <div className="row align-items-center">
+        <div className="col-12 col-md-6 text-center mb-4 mb-md-0">
+          <img src={imageURL} alt={productName} className="img-fluid" style={{ maxHeight: "380px" }} />
         </div>
-        <div className="col-6 p-5 mt-5">
-          <h1>{productName}</h1>
-          <p>{productDesription}</p>
-          <div>
+        <div className="col-12 col-md-6 p-2 p-md-5 mt-2 mt-md-4">
+          <h1 className="fs-2">{productName}</h1>
+          <p className="text-muted">{productDesription}</p>
+          <div className="d-flex flex-wrap align-items-center gap-3 mb-3">
             {tryDemo ? (
-              <a href={tryDemo}>Try Demo</a>
+              <a href={tryDemo} className="text-decoration-none text-primary fw-medium">Try Demo</a>
             ) : (
               <button className="support-link-btn">Try Demo</button>
             )}
             {learnMore ? (
-              <a href={learnMore} style={{ marginLeft: "50px" }}>Learn More</a>
+              <a href={learnMore} className="text-decoration-none text-primary fw-medium">Learn More</a>
             ) : (
-              <button className="support-link-btn" style={{ marginLeft: "50px" }}>Learn More</button>
+              <button className="support-link-btn">Learn More</button>
             )}
           </div>
-          <div className="mt-3">
+          <div className="mt-3 d-flex flex-wrap gap-3">
             {googlePlay ? (
               <a href={googlePlay}>
                 <img src="/media/images/googlePlayBadge.svg" alt="Get it on Google Play" />
@@ -43,14 +43,12 @@ function LeftSection({
                 <img
                   src="/media/images/appstoreBadge.svg"
                   alt="Download on the App Store"
-                  style={{ marginLeft: "50px" }}
                 />
               </a>
             ) : (
               <img
                 src="/media/images/appstoreBadge.svg"
                 alt="Download on the App Store"
-                style={{ marginLeft: "50px" }}
               />
             )}
           </div>

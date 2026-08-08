@@ -2,10 +2,10 @@ import React from "react";
 
 function Stats() {
   return (
-    <div className="container p-3">
-      <div className="row p-5">
-        <div className="col-6 p-5">
-          <h1 className="fs-2 mb-5">Trust with confidence</h1>
+    <div className="container p-2 p-md-3">
+      <div className="row p-3 p-md-5 align-items-center">
+        <div className="col-12 col-md-6 p-2 p-md-5 mb-4 mb-md-0">
+          <h1 className="fs-2 mb-4 mb-md-5">Trust with confidence</h1>
           <h2 className="fs-4">Customer-first always</h2>
           <p className="text-muted">
             That's why 1.3+ crore customers trust Zerodha with ₹3.5+ lakh crores
@@ -28,9 +28,9 @@ function Stats() {
             money.
           </p>
         </div>
-        <div className="col-6 p-5">
-          <img src="/media/images/ecosystem.png" alt="Zerodha ecosystem" style={{ width: "90%" }} />
-          <div className="text-center">
+        <div className="col-12 col-md-6 p-2 p-md-5 text-center">
+          <img src="/media/images/ecosystem.png" alt="Zerodha ecosystem" className="img-fluid" style={{ maxWidth: "90%" }} />
+          <div className="text-center mt-3">
             <button className="support-link-btn" style={{ background: "none", border: "none", cursor: "pointer", color: "#387ed1" }}>
               Explore our products{" "}
               <i className="fa fa-long-arrow-right" aria-hidden="true"></i>

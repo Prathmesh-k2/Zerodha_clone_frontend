@@ -12,13 +12,27 @@ code {
     monospace;
 }
 
+/* Global Responsive Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .nav-link {
   margin-left: 40px;
+}
+
+@media (max-width: 991px) {
+  .nav-link {
+    margin-left: 0;
+    padding: 10px 0;
+  }
 }
 
 #supportHero {
   background-color: rgb(56, 126, 209);
   color: white;
+  padding: 20px 0;
 }
 
 #supportHero a {
@@ -28,15 +42,39 @@ code {
 #supportWrapper {
   display: flex;
   justify-content: space-between;
-  margin: 0 150px;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 #supportHero input {
-  padding: 20px 50px;
+  padding: 14px 20px;
   width: 100%;
-  font-size: 20px;
-  border-radius: 10px;
+  font-size: 16px;
+  border-radius: 8px;
   border: none;
+  box-sizing: border-box;
+}
+
+/* Mobile Media Queries */
+@media (max-width: 768px) {
+  #supportWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .zd-auth-card {
+    padding: 24px 20px !important;
+  }
+
+  .support-link-btn {
+    width: 100%;
+    margin: 6px 0 !important;
+    text-align: center;
+  }
 }
 
 /* ─── Auth Page (Signup / Login) ─────────────────────────────── */
