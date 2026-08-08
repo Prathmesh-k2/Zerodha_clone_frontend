@@ -1,8 +1,15 @@
 import React, { useState } from "react";
 
-// Dashboard URL — set REACT_APP_DASHBOARD_URL in Vercel env vars
-const DASHBOARD_URL = process.env.REACT_APP_DASHBOARD_URL || "https://zerodha-clone-dashboard-373f8piay-prathmeshs-projects-e9602d09.vercel.app/";
-const API_URL = process.env.REACT_APP_API_URL || "https://zerodha-clone-backend-uc3s.onrender.com";
+// Dashboard & API URLs — uses Vercel env vars or falls back to production endpoints
+const rawDashboardUrl = process.env.REACT_APP_DASHBOARD_URL;
+const DASHBOARD_URL = (rawDashboardUrl && !rawDashboardUrl.includes("your-dashboard"))
+    ? rawDashboardUrl
+    : "https://zerodha-clone-dashboard-373f8piay-prathmeshs-projects-e9602d09.vercel.app/";
+
+const rawApiUrl = process.env.REACT_APP_API_URL;
+const API_URL = (rawApiUrl && !rawApiUrl.includes("your-backend"))
+    ? rawApiUrl
+    : "https://zerodha-clone-backend-uc3s.onrender.com";
 
 function SignUp() {
     const [tab, setTab] = useState("signup"); // "signup" | "login"
